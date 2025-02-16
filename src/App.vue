@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-col">
-    <div class="block pb-6">
-      <h2>Bookstore</h2>
+    <div class="flex pb-6">
+      <p class="text-lg cursor-pointer" @click="$router.push({name: 'home'})">Bookstore</p>
     </div>
     <RouterView />
   </div>

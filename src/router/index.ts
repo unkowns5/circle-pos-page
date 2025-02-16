@@ -7,7 +7,7 @@ const router = createRouter({
     routes: [
         { 
             path: '/', 
-            name: 'bookstore',
+            name: 'home',
             component: ListView
         },
 

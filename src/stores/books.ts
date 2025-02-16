@@ -5,7 +5,7 @@ import { ref } from "vue";
 export const useBooks = defineStore('books', {
     state: () => ({
         books: ref<Book[]>([]),
-        loading: false,
+        loading: ref(false),
     }),
 
     actions: {
@@ -14,11 +14,7 @@ export const useBooks = defineStore('books', {
             await fetch( import.meta.env.VITE_API_URL)
             .then(response => response.json())
             .then(data => this.books = data.books)
-            .finally(() => 
-                setTimeout(() => {
-                    this.loading = false
-                }, 600)
-            )
+            .finally(() => this.loading = false)
         }
     }
 })
