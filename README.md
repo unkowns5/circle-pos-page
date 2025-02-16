@@ -1,6 +1,6 @@
 # circle-pos-page
 
-This template should help get you started developing with Vue 3 in Vite.
+[Site Demo Page](https://circle-pos-page.vercel.app/)
 
 ## Recommended IDE Setup
 
